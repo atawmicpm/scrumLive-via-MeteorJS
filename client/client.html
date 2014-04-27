@@ -1,0 +1,46 @@
+<head>
+    <title>aScrum Live</title>
+</head>
+
+<body>
+    {{> navbar }}
+    <div class="container">
+    <div class="row">
+    <div class="col md-3 pull-right">
+    <div class="well" id="livechat">
+        {{> input }}
+        <div class="small">
+        {{> chat }}
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+</body>
+
+
+<template name="navbar">
+    <div class="navbar navbar-default" role="navigation">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">aScrum Live</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Link</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                {{> loginButtons }} <!-- here -->
+            </ul>
+        </div>
+    </div>
+</template>
+
+<template name="chat">
+    {{#each messages}}
+    <strong>{{name}}:</strong> {{message}}<br>
+    {{/each}}
+</template>
+
+<template name="input">
+    <p><input type="text" id="message" placeholder="type message..." class="form-control input-md"></p>
+</template>

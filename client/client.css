@@ -1,0 +1,6 @@
+/* CSS declarations go here */
+#livechat {
+    height: 500px !important;
+    width: 600px;
+    overflow-style: scrollbar;
+}
