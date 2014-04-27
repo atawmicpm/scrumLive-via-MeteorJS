@@ -5,8 +5,16 @@
       "event-hooks": {},
       "collection-hooks": {},
       "bootstrap-3": {},
-      "accounts-ui-bootstrap-3-blaze": {},
-      "iron-router": {}
+      "iron-router": {},
+      "accounts-entry": {},
+      "moment": {},
+      "roles": {},
+      "semantic-ui-less": {},
+      "tutorials": {},
+      "cluster": {},
+      "jquery-scrollTo": {},
+      "documentary": {},
+      "jsencrypt": {}
     },
     "packages": {
       "event-hooks": {
@@ -24,20 +32,70 @@
         "tag": "v3.1.1-1",
         "commit": "63dd38968828bb8963636df93e9a1c45e2dfe67e"
       },
-      "accounts-ui-bootstrap-3-blaze": {
-        "git": "https://github.com/rajit/meteor-accounts-ui-bootstrap-3.git",
-        "tag": "v0.3.7",
-        "commit": "a40b15f4b6213040accec10df97a7793e3a25225"
-      },
       "iron-router": {
         "git": "https://github.com/EventedMind/iron-router.git",
         "tag": "v0.7.1",
         "commit": "d1ffb3f06ea4c112132b030f2eb1a70b81675ecb"
       },
+      "accounts-entry": {
+        "git": "https://github.com/Differential/accounts-entry.git",
+        "tag": "v0.7.2",
+        "commit": "cda8617139b5edd79a52023986bfecb48e4b9dc4"
+      },
+      "moment": {
+        "git": "https://github.com/acreeger/meteor-moment.git",
+        "tag": "v2.6.0",
+        "commit": "26156df681750fd6e6ed77043eef32b6653ebbdf"
+      },
+      "roles": {
+        "git": "https://github.com/alanning/meteor-roles.git",
+        "tag": "v1.2.8",
+        "commit": "68844ba216c348d332bdb840825850f497f515bb"
+      },
+      "semantic-ui-less": {
+        "git": "https://github.com/nooitaf/meteor-semantic-ui-less.git",
+        "tag": "v0.16.1",
+        "commit": "13d26eac3e92614cb89b54aaa3b8dbd041ed3861"
+      },
+      "tutorials": {
+        "git": "https://github.com/mizzao/meteor-tutorials.git",
+        "tag": "v0.6.0",
+        "commit": "e63b1f811f087b477a72c33edac9831e6ecafb5c"
+      },
+      "cluster": {
+        "git": "https://github.com/arunoda/meteor-cluster.git",
+        "tag": "v0.1.7",
+        "commit": "6bc38031777f7e23783006488a142114af82a001"
+      },
+      "jquery-scrollTo": {
+        "git": "https://github.com/nate-strauser/meteor-jquery.scrollTo.git",
+        "tag": "v1.4.6",
+        "commit": "ab6f05c43e2a54fc7711e5a2ff8daa45e5ff4322"
+      },
+      "documentary": {
+        "git": "https://github.com/CodeAdventure/meteor-documentary.git",
+        "tag": "v0.1.2",
+        "commit": "1ccb5a4c04e871049172c418bc4bc639cc3e3b6f"
+      },
+      "jsencrypt": {
+        "git": "https://github.com/wreiske/meteor-jsencrypt.git",
+        "tag": "v0.1.1",
+        "commit": "9d7bae06a4a020fbc62d3ae8e245b1cb3d750f5a"
+      },
       "blaze-layout": {
         "git": "https://github.com/EventedMind/blaze-layout.git",
         "tag": "v0.2.4",
         "commit": "b40e9b0612329288d75cf52ad14a7da64bb8618f"
+      },
+      "just-i18n": {
+        "git": "https://github.com/subhog/meteor-just-i18n.git",
+        "tag": "v0.2.4",
+        "commit": "91decfcf5b3b5e67f202a67658350b862330bf3d"
+      },
+      "accounts-t9n": {
+        "git": "https://github.com/softwarerero/meteor-accounts-t9n.git",
+        "tag": "v0.0.3",
+        "commit": "d1710f979d6955459d9ce0374df81d22c3c6a6ab"
       }
     }
   }

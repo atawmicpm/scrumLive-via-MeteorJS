@@ -3,7 +3,15 @@
     "event-hooks": {},
     "collection-hooks": {},
     "bootstrap-3": {},
-    "accounts-ui-bootstrap-3-blaze": {},
-    "iron-router": {}
+    "iron-router": {},
+    "accounts-entry": {},
+    "moment": {},
+    "roles": {},
+    "semantic-ui-less": {},
+    "tutorials": {},
+    "cluster": {},
+    "jquery-scrollTo": {},
+    "documentary": {},
+    "jsencrypt": {}
   }
 }

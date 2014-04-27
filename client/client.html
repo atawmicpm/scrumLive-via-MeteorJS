@@ -1,46 +1,91 @@
 <head>
-    <title>aScrum Live</title>
+    <title>scrumLive via MeteorJS</title>
 </head>
 
 <body>
-    {{> navbar }}
-    <div class="container">
-    <div class="row">
-    <div class="col md-3 pull-right">
-    <div class="well" id="livechat">
-        {{> input }}
-        <div class="small">
-        {{> chat }}
+
+    <div class="ui grid">
+        <!--<div class="one wide column"></div>-->
+        <div class="sixteen wide column">
+            {{> nav }}
         </div>
     </div>
+
+    <div class="ui grid">
+        <div class="eleven wide column">
+            <div class="ui green segment">
+                {{> input }}
+                <div id="#livechat-inner">
+                    <div class="small">
+                        {{> chat }}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="five wide column">
+            <div class="ui raised segment">
+                {{> input }}
+                <div id="#livechat-inner">
+                    <div class="small">
+                        {{> chat }}
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
-    </div>
-    </div>
+
 </body>
 
 
-<template name="navbar">
-    <div class="navbar navbar-default" role="navigation">
-        <div class="navbar-header">
-            <a class="navbar-brand" href="#">aScrum Live</a>
+<template name="nav">
+
+    <div class="ui orange sub menu">
+    <!--<div class="ui orange inverted tiered menu">-->
+        <div class="menu">
+        <a class="active item" href="{{pathFor 'dashboard'}}" data-tab="dashboard">  <i class="dashboard icon"></i> Dashboard </a>
+        <a class="item" href="{{pathFor 'users'}}" data-tab="users"> <i class="users icon"></i> Users &nbsp;&nbsp;</a>
+        <a class="item" href="{{pathFor 'projects'}}" data-tab="projects"> <i class="grid layout icon"></i> Projects </a>
+        <a class="item" href="{{pathFor 'admin'}}" data-tab="settings">    Settings </a>
+        <a class="item"  href="{{pathFor 'about'}}" data-tab="about">         About </a>
+        <div class="right menu">
+            <div class="ui dropdown item">
+                Account <i class="icon dropdown"></i>
+                <div class="menu">
+                    <div class="ui dropdown item">
+                        More <i class="icon dropdown"></i>
+                            <div class="menu">
+                                {{ accountButtons }}
+
+                                <a class="item"><i class="edit icon"></i> Edit Profile</a>
+                            <a class="item"><i class="globe icon"></i> Choose Language</a>
+                            <a class="item"><i class="settings icon"></i> Account Settings</a>
+                     </div>
+                </div>
+            </div>
         </div>
-        <div class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Link</a></li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-                {{> loginButtons }} <!-- here -->
-            </ul>
+    </div>
+
+        <!--<div class="ui orange sub menu">-->
+        <div class="ui orange inverted tiered menu">
+            <a class="active item"  href="{{pathFor 'about'}}" data-tab="about"> <i class="icon signal"></i> Statistics&nbsp;&nbsp;&nbsp; </a>
+            <a class="item"  href="{{pathFor 'settings'}}" data-tab="about"><i class="settings icon"></i> Settings </a>
         </div>
+    </div>
+
     </div>
 </template>
 
 <template name="chat">
     {{#each messages}}
-    <strong>{{name}}:</strong> {{message}}<br>
+        <strong>{{name}}:</strong> {{message}}<br>
     {{/each}}
 </template>
 
 <template name="input">
-    <p><input type="text" id="message" placeholder="type message..." class="form-control input-md"></p>
+    <div class="ui icon small input">
+        <input type="text" id="message" placeholder="type message...">
+    <i class="chat outline large icon"></i>
+</div>
 </template>
