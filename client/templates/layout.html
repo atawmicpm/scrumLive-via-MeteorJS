@@ -1,0 +1,49 @@
+<template name="layout">
+
+{{#if currentUser}}
+    <div class="ui grid">
+        <div class="sixteen wide column">
+            {{> yield "nav" }}
+        </div>
+    </div>
+
+    <div class="ui grid">
+        <div class="eleven wide column">
+
+            <!--<div class="ui blue raised segment">-->
+               {{> yield }}
+            <!--</div>-->
+        </div>
+
+        <div class="five wide column">
+            <div class="ui inverted green segment">
+                <small>
+                    {{> yield "chat" }}
+                </small>
+            </div>
+        </div>
+    </div>
+{{else}}
+    <div class="ui grid">
+        <div class="sixteen wide column">
+            <form id="login-form" action="action">
+                <div>
+                    <div class="ui icon input">
+                        <input type="email" placeholder="Email" id="login-email">
+                        <i class="user icon"></i>
+                    </div>
+
+                    <div class="ui input">
+                        <input type="password" placeholder="Password" id="login-password">
+                    </div>
+
+
+                    <!--<input type="email" id="login-email" />-->
+                    <!--<input type="password" id="login-password" />-->
+                    <input class="ui hover button" type="submit" id="login-button" value="Sign in" />
+                </div>
+            </form>
+        </div>
+    </div>
+{{/if}}
+</template>

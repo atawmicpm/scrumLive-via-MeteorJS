@@ -2,9 +2,7 @@
   "packages": {
     "event-hooks": {},
     "collection-hooks": {},
-    "bootstrap-3": {},
     "iron-router": {},
-    "accounts-entry": {},
     "moment": {},
     "roles": {},
     "semantic-ui-less": {},
@@ -12,6 +10,7 @@
     "cluster": {},
     "jquery-scrollTo": {},
     "documentary": {},
-    "jsencrypt": {}
+    "jsencrypt": {},
+    "iron-router-active": {}
   }
 }

@@ -1,7 +1,5 @@
-Session.setDefault('settingsLoaded', false);
-Meteor.subscribe('settings', function(){
-  Session.set('settingsLoaded',true);
-  Session.set('systemConfigs', Settings.find().fetch()[0]);
+Deps.autorun(function () {
+  Meteor.subscribe("chat");
+  Meteor.subscribe("project");
+  Meteor.subscribe("tasks");
 });
-
-Meteor.subscribe('')

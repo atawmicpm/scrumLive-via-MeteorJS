@@ -7,7 +7,7 @@
           <option name="connectOnIdeStartup" value="true" />
           <option name="label" value="localhost" />
           <option name="serverName" value="localhost" />
-          <option name="serverPort" value="27019" />
+          <option name="serverPort" value="3001" />
         </ServerConfiguration>
       </list>
     </option>

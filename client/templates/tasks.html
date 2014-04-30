@@ -1,0 +1,23 @@
+<template name="tasks">
+
+    <div class="ui icon large input fluid">
+        <i class="chat outline large icon"></i>
+        <input type="text" id="task" placeholder="Add task...">
+    </div>
+
+    <div class="ui lifted segment">
+
+        <div class="ui form">
+            {{#each task}}
+                <div class="inline field">
+                    <div class="ui checkbox">
+                        <input type="checkbox">
+                        <label> {{description}} </label>
+                        <i class="remove"></i><br>
+                    </div>
+                </div>
+            {{/each}}
+        </div>
+    </div>
+
+</template>

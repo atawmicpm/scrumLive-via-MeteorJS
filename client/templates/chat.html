@@ -1,0 +1,14 @@
+<template name="chat">
+
+    <div class="ui icon large input fluid">
+        <i class="chat outline large icon"></i>
+        <input type="text" id="message" placeholder="type message...">
+    </div>
+    <div class="ui lifted segment">
+
+
+        {{#each messages}}
+                <strong>{{name}}</strong><br>{{message}}<br>
+        {{/each}}
+    </div>
+</template>

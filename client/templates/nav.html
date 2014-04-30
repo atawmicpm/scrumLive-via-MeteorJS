@@ -1,0 +1,16 @@
+<template name="nav">
+    <div class="ui green tiered menu">
+        <div class="menu">
+            <a class="item {{ isActiveRoute 'dashboard'}}" href="{{pathFor 'dashboard'}}" data-tab="dashboard">  <i class="dashboard icon"></i> Dashboard </a>
+            <a class="item {{ isActiveRoute 'users'}}" href="{{pathFor 'users'}}" data-tab="users"> <i class="users icon"></i> Users &nbsp;&nbsp;</a>
+            <a class="item {{ isActiveRoute 'project'}}" href="{{pathFor 'project'}}" data-tab="project"> <i class="grid layout icon"></i> Projects </a>
+            <a class="item {{ isActiveRoute 'about'}}" href="{{pathFor 'about'}}" data-tab="about">    About </a>
+            <a class="item {{ isActiveRoute 'settings'}}"  href="{{pathFor 'settings'}}" data-tab="settings">         Settings </a>
+            <div class="right menu">
+               <a class="item" id="logout">Logout</a>
+            </div>
+        </div>
+    </div>
+</template>
+
+
